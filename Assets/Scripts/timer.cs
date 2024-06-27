@@ -1,52 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
-public class timer : MonoBehaviour
+public class Timer : MonoBehaviour
 {
+    public float TimeLeft;
+    public bool TimerOn = true;
 
-    
-    public GameObject Lastrun;
-    public TMPro.TextMeshProUGUI last_run;
-    public GameObject score;
-    public TMPro.TextMeshProUGUI score_text;
-    public float timerr;
-    //running functions when invoked from other script
-    private void OnEnable()
+    public TextMeshProUGUI TimerTxt;
+   
+    void Start()
     {
-        //CollideCheck.OnPlayerCollision += ResetTimer;
-        //finishGame.OnPlayerCollision2 += end_game;
+        TimerOn = true;
     }
-    //running functions when invoked from other scripts
-    private void OnDisable()
+
+    void Update()
     {
-        //CollideCheck.OnPlayerCollision -= ResetTimer;
-        //finishGame.OnPlayerCollision2 -= end_game;
+        if(TimerOn)
+        {
+            if(TimeLeft > 0)
+            {
+                TimeLeft -= Time.deltaTime;
+                updateTimer(TimeLeft);
+            }
+            else
+            {
+                Debug.Log("Time is UP!");
+                TimeLeft = 0;
+                TimerOn = false;
+            }
+        }
     }
-    //get components
-    private void Start()
+
+    void updateTimer(float currentTime)
     {
-        score_text = score.GetComponent<TMPro.TextMeshProUGUI>();
-    }
-    //updates the timer, rounds the number then displays it.
-    public void Update()
-    {
-        timerr += Time.deltaTime;
-        string formattedTime = timerr.ToString("0.00");
-        score_text.text = formattedTime;
-    }
-    //resets timer
-    private void ResetTimer()
-    {
-        timerr = 0f;
-    }
-    // ends game when the player touches the end capsule, logs their time and displays it on a last run component.
-    public void end_game()
-    {
-        last_run = Lastrun.GetComponent<TMPro.TextMeshProUGUI>();
-        string formattedTime = timerr.ToString("0.00");
-        last_run.text = formattedTime;
-        timerr = 0f;
+        currentTime += 1;
+
+        float minutes = Mathf.FloorToInt(currentTime / 60);
+        float seconds = Mathf.FloorToInt(currentTime % 60);
+
+        TimerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
