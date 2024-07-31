@@ -2128,7 +2128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be134e2a2f9b0a44add07bc81d99fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeLeft: 300
+  TimeLeft: 10
   TimerOn: 0
   TimerTxt: {fileID: 1284487182}
 --- !u!1 &1437487388
@@ -4936,6 +4936,7 @@ GameObject:
   - component: {fileID: 4746430037288044521}
   - component: {fileID: 4746430037288044520}
   - component: {fileID: 4746430037288044519}
+  - component: {fileID: 4746430037288044522}
   m_Layer: 0
   m_Name: Roach
   m_TagString: Untagged
@@ -6774,6 +6775,23 @@ MonoBehaviour:
   GravityStrength: 20
   JumpStrength: 5
   WalkSpeed: 5
+--- !u!114 &4746430037288044522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253642204968297711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c39b064e59b0b43acc30ebedd6cbf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimerOn1: {fileID: 0}
+  ak47: 0
+  laptop: 0
+  cash: 0
+  body: 0
 --- !u!33 &4780790647355457689
 MeshFilter:
   m_ObjectHideFlags: 0
