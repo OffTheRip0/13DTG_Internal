@@ -24,7 +24,6 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time is UP!");
                 TimeLeft = 0;
                 TimerOn = false;
             }

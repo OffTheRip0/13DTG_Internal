@@ -2128,7 +2128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be134e2a2f9b0a44add07bc81d99fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeLeft: 10
+  TimeLeft: 300
   TimerOn: 0
   TimerTxt: {fileID: 1284487182}
 --- !u!1 &1437487388
@@ -3536,7 +3536,7 @@ GameObject:
   - component: {fileID: 1619139893}
   - component: {fileID: 3469287838299245521}
   m_Layer: 0
-  m_Name: AK 47
+  m_Name: ak47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6787,11 +6787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c39b064e59b0b43acc30ebedd6cbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelOver: 0
   TimerOn1: {fileID: 0}
-  ak47: 0
-  laptop: 0
-  cash: 0
-  body: 0
 --- !u!33 &4780790647355457689
 MeshFilter:
   m_ObjectHideFlags: 0

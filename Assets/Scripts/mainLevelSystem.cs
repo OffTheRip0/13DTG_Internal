@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class mainLevelSystem : MonoBehaviour
 {   
     public bool LevelOver = false;
     public Timer TimerOn1;
-    public bool ak47 = false;
-    public bool laptop = false;
-    public bool cash = false;
-    public bool body = false;
+    
+    public bool ak47 { get; set; } = false;
+    public bool laptop { get; set; } = false;
+    public bool cash { get; set; } = false;
+    public bool body { get; set; } = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class mainLevelSystem : MonoBehaviour
         if (TimerOn1.TimerOn == false & LevelOver == false){
             Debug.Log("Timer Over");
             LevelOver = true;
+
 
         }
     }
