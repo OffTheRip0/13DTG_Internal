@@ -21,6 +21,7 @@ public class Trigger : MonoBehaviour, IInteractable
         if (prop != null && prop.PropertyType == typeof(bool))
         {
             prop.SetValue(levelSystem, true);
+            Debug.Log(objectName + " found.");
         }
     }
 }

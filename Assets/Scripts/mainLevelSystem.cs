@@ -26,6 +26,13 @@ public class mainLevelSystem : MonoBehaviour
             Debug.Log("Timer Over");
             LevelOver = true;
 
+            if (ak47 & laptop & cash & body){
+                Debug.Log("Win.");
+            }
+            else{
+                Debug.Log("Lose.");
+            }
+
 
         }
     }
