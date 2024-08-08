@@ -10,7 +10,7 @@ public class mainLevelSystem : MonoBehaviour
     public Timer TimerOn1;
     
     public bool ak47 { get; set; } = false;
-    public bool laptop { get; set; } = false;
+    public bool PC { get; set; } = false;
     public bool cash { get; set; } = false;
     public bool body { get; set; } = false;
     // Start is called before the first frame update
@@ -26,11 +26,13 @@ public class mainLevelSystem : MonoBehaviour
             Debug.Log("Timer Over");
             LevelOver = true;
 
-            if (ak47 & laptop & cash & body){
+            if (ak47 & PC & cash & body){
                 Debug.Log("Win.");
             }
             else{
                 Debug.Log("Lose.");
+                string currentSceneName = SceneManager.GetActiveScene().name;
+                SceneManager.LoadScene(currentSceneName);
             }
 
 
