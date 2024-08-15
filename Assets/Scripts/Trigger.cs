@@ -4,6 +4,9 @@ public class Trigger : MonoBehaviour, IInteractable
 {
     private string objectName;
     private GameObject varr;
+    public AudioSource source;
+    public AudioClip clip;
+
 
     void Awake()
     {
@@ -22,6 +25,7 @@ public class Trigger : MonoBehaviour, IInteractable
         {
             prop.SetValue(levelSystem, true);
             Debug.Log(objectName + " found.");
+            source.PlayOneShot(clip);
         }
     }
 }
