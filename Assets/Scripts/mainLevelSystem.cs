@@ -8,7 +8,9 @@ public class mainLevelSystem : MonoBehaviour
 {   
     public bool LevelOver = false;
     public Timer TimerOn1;
-    
+    public GameObject MenuCanvas;
+    public GameObject LoseMenu;
+    public GameObject WinMenu;
     public bool ak47 { get; set; } = false;
     public bool PC { get; set; } = false;
     public bool cash { get; set; } = false;
@@ -17,6 +19,17 @@ public class mainLevelSystem : MonoBehaviour
     void Start()
     {
         TimerOn1 = FindObjectOfType<Timer>();
+    }
+
+    public void RestartLevel()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     // Update is called once per frame
@@ -28,11 +41,15 @@ public class mainLevelSystem : MonoBehaviour
 
             if (ak47 & PC & cash & body){
                 Debug.Log("Win.");
+                Cursor.lockState = CursorLockMode.None;
+                MenuCanvas.SetActive(true);
+                WinMenu.SetActive(true);
             }
             else{
                 Debug.Log("Lose.");
-                string currentSceneName = SceneManager.GetActiveScene().name;
-                SceneManager.LoadScene(currentSceneName);
+                Cursor.lockState = CursorLockMode.None;
+                MenuCanvas.SetActive(true);
+                LoseMenu.SetActive(true);
             }
 
 
