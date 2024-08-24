@@ -1290,7 +1290,7 @@ GameObject:
   - component: {fileID: 629612126}
   - component: {fileID: 629612128}
   m_Layer: 0
-  m_Name: cash
+  m_Name: two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1426,7 +1426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317118214247041293, guid: 16f88bac483bd004aa718dd62225897d, type: 3}
       propertyPath: m_Name
-      value: body
+      value: three
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7317118214247140889, guid: 16f88bac483bd004aa718dd62225897d, type: 3}
@@ -2671,7 +2671,7 @@ GameObject:
   - component: {fileID: 1099470854}
   - component: {fileID: 1099470855}
   m_Layer: 0
-  m_Name: PC
+  m_Name: four
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4010,7 +4010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be134e2a2f9b0a44add07bc81d99fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeLeft: 10
+  TimeLeft: 300
   TimerOn: 0
   TimerTxt: {fileID: 1284487182}
 --- !u!1 &1437487388
@@ -5529,7 +5529,7 @@ GameObject:
   - component: {fileID: 1619139893}
   - component: {fileID: 3469287838299245521}
   m_Layer: 0
-  m_Name: ak47
+  m_Name: one
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

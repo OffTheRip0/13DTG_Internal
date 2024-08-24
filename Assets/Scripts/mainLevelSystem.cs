@@ -11,10 +11,10 @@ public class mainLevelSystem : MonoBehaviour
     public GameObject MenuCanvas;
     public GameObject LoseMenu;
     public GameObject WinMenu;
-    public bool ak47 { get; set; } = false;
-    public bool PC { get; set; } = false;
-    public bool cash { get; set; } = false;
-    public bool body { get; set; } = false;
+    public bool one { get; set; } = false;
+    public bool two { get; set; } = false;
+    public bool three { get; set; } = false;
+    public bool four { get; set; } = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +39,7 @@ public class mainLevelSystem : MonoBehaviour
             Debug.Log("Timer Over");
             LevelOver = true;
 
-            if (ak47 & PC & cash & body){
+            if (one & two & three & four){
                 Debug.Log("Win.");
                 Cursor.lockState = CursorLockMode.None;
                 MenuCanvas.SetActive(true);
