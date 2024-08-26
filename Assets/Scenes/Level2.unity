@@ -266,7 +266,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.5
   m_Range: 30
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -804,13 +804,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9500000, guid: 22d89f75378c5f841a7ab97e49c98b72, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 22d89f75378c5f841a7ab97e49c98b72, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100096, guid: 22d89f75378c5f841a7ab97e49c98b72, type: 3}
       insertIndex: -1
       addedObject: {fileID: 380837771}
+    - targetCorrespondingSourceObject: {fileID: 100096, guid: 22d89f75378c5f841a7ab97e49c98b72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 380837774}
   m_SourcePrefab: {fileID: 100100000, guid: 22d89f75378c5f841a7ab97e49c98b72, type: 3}
 --- !u!1 &380837770 stripped
 GameObject:
@@ -831,6 +839,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 4746430037288044523}
   clip: {fileID: 8300000, guid: 08793986ba3f10448910c1b1ae88f5a5, type: 3}
+--- !u!65 &380837774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380837770}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.62673444, z: 0.45948318}
+  m_Center: {x: 0, y: 0.0020766421, z: 0.0055316202}
 --- !u!1 &450259620
 GameObject:
   m_ObjectHideFlags: 0

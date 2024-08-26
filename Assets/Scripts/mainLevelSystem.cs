@@ -35,6 +35,12 @@ public class mainLevelSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (one & two & three & four){
+            Debug.Log("Win.");
+            Cursor.lockState = CursorLockMode.None;
+            MenuCanvas.SetActive(true);
+            WinMenu.SetActive(true);
+        }
         if (TimerOn1.TimerOn == false & LevelOver == false){
             Debug.Log("Timer Over");
             LevelOver = true;
