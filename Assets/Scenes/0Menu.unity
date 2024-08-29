@@ -713,8 +713,10 @@ MonoBehaviour:
 
     4.  The levels get harder.
 
-    5. Remember!!! ANY Object
-    can be interactable.'
+    5. Press E to interact,
+    either to find objects or open doors.
+
+    6. Remember!!! ANY Object can be interactable.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
