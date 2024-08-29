@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class cursorSizeChanger : MonoBehaviour
 {
+    // Variables are set for future use
     public float size { get; set; } = 1.25f;
     private RectTransform rectTransform;
     private GameObject test;
